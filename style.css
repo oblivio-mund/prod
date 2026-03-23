@@ -1,0 +1,100 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background:#445777;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: #1e293b;
+    color: white;
+    padding: 15px 0;
+}
+.logo{
+    font-family: 'Train One';
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header .container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Навигация */
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+.nav a :hover{
+    color: #5d62ff;
+    text-decoration: none;
+    transition: 3ms;
+}
+
+/* Бургер */
+.burger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Секции */
+.section {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.753)
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.footer{
+    font-size: 15pt;
+    text-align: center;
+    margin-top: 20px;
+    height: 60px;
+    color: #f4f6f9;
+    background-color: #1e293b;
+}
+
+.footer > p{
+    font-family: 'Train One';
+    padding-top: 15px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+        background: #1e293b;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        padding: 10px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+}
